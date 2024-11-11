@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk Video Player</title>
+    <style>
+        body { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            overflow: hidden; /* Verhindert Scrollen */
+        }
+        iframe { 
+            width: 100vw; /* Maximale Breite des Viewports */
+            height: 100vh; /* Maximale Höhe des Viewports */
+        }
+        button { 
+            margin: 10px; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Ersetzen des video-Tags durch ein iframe -->
+    <iframe id="videoPlayer" src="https://gesellschaft-kultur-geschichte.de/wp-content/uploads/BM_2024_BW_InEcht_S-07_RW-02.mp4" 
+            allow="autoplay; fullscreen" frameborder="0"></iframe>
+   </body>
+</html>
